@@ -1,0 +1,20 @@
+
+@use "../custom" as *;
+.lang-btn{
+    background: transparent;
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 4px;
+    &.dropdown-toggle{
+        &::after{
+            display: none;
+        }
+    }
+    &:hover {
+        background: #edeff0;
+        -webkit-backdrop-filter: saturate(180%) blur(5px);
+        backdrop-filter: saturate(180%) blur(5px);
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "printanium",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "sass --watch src/styles/main.scss:src/styles/main.css"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.13.5",
+    "@tanstack/react-table": "^8.9.3",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.3.0",
+    "cookie": "^0.5.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "formik": "^2.4.2",
+    "framer-motion": "^10.12.18",
+    "framer-motion-3d": "^10.12.18",
+    "next": "13.3.0",
+    "next-i18next": "^13.3.0",
+    "nextjs-progressbar": "^0.0.16",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.2",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-data-table-component": "^7.5.3",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-icons": "^4.10.1",
+    "react-phone-number-input": "^3.3.0",
+    "reactstrap": "^9.2.0",
+    "styled-components": "^6.0.7",
+    "swiper": "^10.0.4",
+    "swr": "^2.2.0",
+    "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "sass": "^1.61.0"
+  }
+}

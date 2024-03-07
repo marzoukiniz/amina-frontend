@@ -1,0 +1,243 @@
+@use "../custom" as *;
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    .lang-btn{
+        background: transparent;
+        border: none;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 7px;
+        border-radius: 4px;
+        &.dropdown-toggle{
+            &::after{
+                display: none;
+            }
+        }
+        &:hover {
+            background: #edeff0;
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+        }
+    }
+
+    .header-icon {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        padding: 7px;
+        transition: background .6s ease;
+
+        &:hover {
+            background: #edeff0;
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+        }
+    }
+
+    .btn {
+        border-radius: 0px;
+    }
+
+    .logged-user {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .user-icon {
+            border: 1px solid $primary-green;
+            background-color: transparent;
+            position: relative;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.dropdown-toggle{
+                &::after{
+                    display: none;
+                }
+            }
+            
+        }
+
+        .welcome {
+            margin: 0px;
+            padding: 5px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .username {
+            color: $primary-green;
+            padding: 5px
+        }
+        .logged-user-menu ,.dropdown-menu{
+            padding: 10px;
+            li{
+                opacity: 0.7;
+                &:hover{
+                    background: transparent;
+                    border-radius: 4px;
+                    opacity: 1;
+                    .dashboard-icon, .profile-icon, .logout-icon{
+                        path{
+                            &:first-child{
+                                fill: $primary-green;
+                            }
+                        }
+                    }
+                    a{
+                        color: $primary-green;
+                    }
+                }
+                .dropdown-item{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: $text-gray;
+                    svg{
+                        width: 22px;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                    }
+                   &:hover{
+                    background: $bg;
+                    border-radius: 4px;
+                   }
+                }
+            }
+        }
+    }
+}
+.dropdown-menu{
+    padding: 10px;
+    li{
+        opacity: 0.7;
+        &:hover{
+            background: transparent;
+            border-radius: 4px;
+            opacity: 1;
+            .dashboard-icon, .profile-icon, .logout-icon{
+                path{
+                    &:first-child{
+                        fill: $primary-green;
+                    }
+                }
+            }
+            a{
+                color: $primary-green;
+            }
+        }
+        .dropdown-item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $text-gray;
+            svg{
+                width: 22px;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+           &:hover{
+            background: $bg;
+            border-radius: 4px;
+           }
+        }
+    }
+}
+.profile-top-card{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: none;
+    padding: 12px;
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    margin: 7px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: white;
+    margin-bottom: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+
+    .profile-img{
+        img{
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+    }
+    .profile-details{
+        margin-left: 15px;
+        margin-right: 15px;
+        .item{
+            display: flex;
+    align-items: center;
+    padding: 7px;
+            .icon{
+                color: #7987A1;
+            }
+            .title{
+                color: #7987A1;
+                font-size: 14px;
+                font-weight: bold;
+                margin-left: 5px;
+                margin-right: 5px;
+                &.name{
+                    font-size: 16px;
+                }
+            }
+            .value{
+                color: #7987A1;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.profile-nav{
+ 
+    .nav-tabs {
+        border: none;
+        border-top: 1px solid #dee2e6;
+        .nav-link{
+            transition: all 0.3s linear;
+           border-radius: 0px;
+            border: none;
+            color: #7987A1;
+            &.active {
+                color: $primary-green;
+                font-weight: bold;
+     
+            }
+        }
+    }
+}
+.tab-content{
+    background: white;
+    margin-top: 10px;
+    min-height: 250px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.box-no{
+    box-shadow: none!important;
+}
+.box-yes{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}

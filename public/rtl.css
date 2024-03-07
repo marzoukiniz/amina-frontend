@@ -1,0 +1,17 @@
+body[dir="rtl"] {
+    font-family:"Almarai-Regular"!important;
+   
+}  
+ 
+.header .site-nav ul li a {
+    font-family: "Almarai-Regular"!important;
+}
+
+body[dir="rtl"] .footer *{
+   
+        font-family: "Almarai-Regular"!important;
+ 
+}
+body[dir="rtl"] .register-btn{
+    font-family: "Almarai-Regular"!important;
+}
